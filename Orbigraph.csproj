@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<OutputType>Exe</OutputType>
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+		<AssemblyTitle>Orbigraph</AssemblyTitle>
+		<Product>Orbigraph</Product>
+		<Copyright>Copyright ©  2025</Copyright>
+		<AssemblyVersion>1.0.0.0</AssemblyVersion>
+		<FileVersion>1.0.0.0</FileVersion>
+		<PublishSingleFile>true</PublishSingleFile>
+		<IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="CommandLineParser" Version="2.9.1" />
+		<PackageReference Include="CsvHelper" Version="33.0.1" />
+		<PackageReference Include="Doxygen" Version="1.8.14">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+		<PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="HarfBuzzSharp" Version="8.3.0.1" />
+		<PackageReference Include="HarfBuzzSharp.NativeAssets.Linux" Version="8.3.0.1" />
+		<PackageReference Include="HarfBuzzSharp.NativeAssets.macOS" Version="8.3.0.1" />
+		<PackageReference Include="HarfBuzzSharp.NativeAssets.Win32" Version="8.3.0.1" />
+		<PackageReference Include="Irony.NetCore" Version="1.1.11" />
+		<PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies.net472" Version="1.0.3">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="ScottPlot" Version="5.0.54" />
+		<PackageReference Include="SkiaSharp" Version="3.116.1" />
+		<PackageReference Include="SkiaSharp.HarfBuzz" Version="3.116.1" />
+		<PackageReference Include="SkiaSharp.NativeAssets.Linux.NoDependencies" Version="3.116.1" />
+		<PackageReference Include="SkiaSharp.NativeAssets.macOS" Version="3.116.1" />
+		<PackageReference Include="SkiaSharp.NativeAssets.Win32" Version="3.116.1" />
+		<PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="6.1.0" />
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Remove="Grammar\CodeFile1.cs" />
+		<Compile Remove="Parsers\GraphDSLParser.cs" />
+	</ItemGroup>
+
+</Project>

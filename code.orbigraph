@@ -1,0 +1,5 @@
+﻿plot [time] vs [temperature] {
+	regression: linear;
+	gridthickness: 3;
+	hidegrid: true;
+}
