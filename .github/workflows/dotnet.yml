@@ -3,7 +3,7 @@ name: Build and Release C# Project
 on:
   push:
     tags:
-      - 'v*'
+      - 'v*.*.*'
 
 jobs:
   build:
